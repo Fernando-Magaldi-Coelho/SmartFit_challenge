@@ -1,0 +1,171 @@
+.container-all-form{
+    border: 2px solid rgba(128, 128, 128, 0.315);
+    border-radius: 5px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 1rem;
+    margin-top: 2rem;
+    position: relative;
+    border-bottom: 3px solid rgba(128, 128, 128, 0.315);
+    margin-bottom: 2rem;
+}
+
+
+.form_header_horario img{
+    height: 20px;
+}
+
+.form_header_horario p{
+    color: var(--light-grey);
+    font-size: 10px;
+}
+
+.form_header_horario{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: .8rem;
+    left: 1rem;
+    flex-direction: flex;
+    gap: .5rem;
+}
+
+.container-question{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.315);
+}
+
+.container-question h1{
+    color: var(--light-grey);
+    font-weight: 400;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    margin-left: .3rem;
+}
+
+.container-options{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+.container_left_option{
+    display: flex;
+    align-items: center;
+    padding: .5rem 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.315);
+    position: relative;
+}
+
+.container_left_option label{
+    margin-left: .3rem;
+    font-size: 12px;
+    color: var(--light-grey);
+}
+
+.container-options span{
+    font-size: 12px;
+    color: var(--light-grey);
+}
+
+.form_hour{
+    position: absolute;
+    right: 0;
+}
+
+.container-results{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+@media (max-width:457px){
+    .container-results{
+        justify-content: center;
+    }
+}
+
+.container-results-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-results label{
+    font-size: 12px;
+    color: var(--dark-grey);
+    margin-left: .3rem;
+}
+
+.container-results span{
+    font-size: 12px;
+    color: var(--dark-grey);
+}
+
+.container_buttons{
+    color: var(--dark-grey);
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_buttons button{
+    padding: .7rem 1rem;
+    border-radius: 3px;
+    margin: 1rem;
+    width: 15rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.search{
+    background-color: var(--yellow);
+    border: 1px solid var(--yellow);
+}
+
+.clean{
+    background-color: transparent;
+    border: 1px solid var(--light-grey);
+}
+
+.container_buttons button:hover{
+    cursor: pointer;
+}
+
+.container-results span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resultado_span{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: .2rem;
+}
+
+.container-results-input input{
+    cursor: pointer;
+}
+
+.container-results-input label{
+    cursor: pointer;
+}

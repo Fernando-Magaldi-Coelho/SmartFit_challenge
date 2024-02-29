@@ -1,0 +1,39 @@
+.container_subtitle_all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.container_subtitle{
+    background-color: var(--card-grey);
+    padding: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.container_subtitle_imgs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: nowrap;
+}
+
+.container_subtitle_imgs img{
+    height: 64px;
+}
+
+.subtitles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}

@@ -1,0 +1,65 @@
+<form class="container-all-form" [formGroup]="formGroup">
+    
+    <div class="form_header_horario">
+        <img src="../../../assets/img/png/icon-hour.png" alt="relogio">
+        <p>Horário</p>
+    </div>
+
+    <div class="container-question">
+        <h1 class="question">Qual período quer treinar?</h1>
+    </div>
+
+    <div class="container-options">
+        
+        <div class="container_left_option">
+            <input type="radio" name="hour" value="morning" id="morning" formControlName="hour">
+            <label for="morning">Manhã</label>
+
+            <div class="form_hour">
+                <span>06:00 às 12:00</span>
+            </div>
+        </div>
+
+        <div class="container_left_option">
+            <input type="radio" name="hour" id="afternoon" value="afternoon" formControlName="hour">
+            <label for="afternoon">Tarde</label>
+
+            <div class="form_hour">
+                <span>12:01 às 18:00</span>
+            </div>
+        </div>
+
+        <div class="container_left_option">
+            <input type="radio" name="hour" id="night" value="night" formControlName="hour">
+            <label for="night">Noite</label>
+
+            <div class="form_hour">
+                <span>18:01 às 23:00</span>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <div class="container-results">
+        <div class="container-results-input">
+        <input type="checkbox" name="showClosed" id="showClosed" formControlName="showClosed">
+        <label for="showClosed">Exibir unidades fechadas</label>
+        </div>
+
+        <span>Resultados encontrados: <div class="resultado_span">{{ filteredResults.length }}</div></span>
+    
+    </div>
+
+    <div class="container_buttons">
+
+    <button class="search" (click)="onSubmit()">Encontrar unidade</button>
+    
+    <button class="clean" (click)="onClean()">Limpar</button>
+
+
+</div>
+
+</form>
